@@ -185,6 +185,7 @@ public class Village {
 			return etalVendeur;
 		}
 
+
 		private int getNbEtal() {
 			return etals.length;
 		}
