@@ -157,7 +157,7 @@ public class TestControleursDesCas {
 		String[] marche = controlAfficherMarche.donnerInfosMarche();
 		for (String etal : marche) {
 			System.out.println(etal);
-//		}
+		}
 		
 
 //		Sortie Console :
@@ -192,4 +192,4 @@ public class TestControleursDesCas {
 	}
 
 }
-}
+

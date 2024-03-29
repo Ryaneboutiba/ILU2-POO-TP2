@@ -21,6 +21,9 @@ public class ControlPrendreEtal {
 		//TODO a completer
 		int numeroEtal = -1;
 		numeroEtal=village.installerVendeur(village.trouverHabitant(nomVendeur), produit, nbProduit);
+		if(numeroEtal==-1) {
+			return numeroEtal;
+		}
 		return numeroEtal+1;
 		
 		
