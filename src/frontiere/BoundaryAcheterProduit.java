@@ -17,7 +17,7 @@ public class BoundaryAcheterProduit {
 		// TODO Ã  completer
 		System.out.println("Quel produit souhaitez acheter?\n");
 		String produit=scan.nextLine();
-		System.out.println("Chez quel commerçant voulez-vous acheter des "+produit+"?\n");
+		System.out.println("Chez quel commerï¿½ant voulez-vous acheter des "+produit+"?\n");
 		Gaulois[] vendeur=controlAcheterProduit.vendeursProduit(produit);
 		if(vendeur==null) {
 			System.out.println("Desole nous ne vendons pas ce produit dans le marche");
@@ -30,6 +30,7 @@ public class BoundaryAcheterProduit {
 			int quantiteVoulue=Clavier.entrerEntier("Combien de fleurs voulez-vous acheter?\n");
 			/*controlAcheterProduit.acheterProduit(nomAcheteur,vendeur[numVendeur-1],quantiteProduitVoulue);*/
 			int quantiteAcheter=controlAcheterProduit.acheterProduit(vendeur[numVendeur-1].getNom(), quantiteVoulue);
+			System.out.println("Vous avez acheter "+quantiteAcheter+" produit");
 			System.out.println("Au revoir client "+nomAcheteur);
 		}
 	}
