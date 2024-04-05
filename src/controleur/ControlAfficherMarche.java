@@ -12,6 +12,7 @@ public class ControlAfficherMarche {
 	//TODO a completer
 	public String[] donnerInfosMarche() {
 		String[] infosMarche=village.donnerEtatMarche();
+		System.out.println(infosMarche.length);
 		return infosMarche;
 	}
 }
